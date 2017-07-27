@@ -20,3 +20,25 @@ struct JSONPSPhoto : Singleton, ServiceHost {
     static var path: String? { return "photos" }
     
 }
+
+struct JSONPlaceholderToDoService : Singleton, ServiceHost {
+    
+    fileprivate(set) static var shared = Instance()
+    typealias Instance = JSONPlaceholderToDoService
+    
+    static var scheme: String { return "https" }
+    static var host: String { return "jsonplaceholder.typicode.com" }
+    static var path: String? { return "todos" }
+    
+}
+
+struct JSONPlaceholderPostService : Singleton, ServiceHost {
+    
+    fileprivate(set) static var shared = Instance()
+    typealias Instance = JSONPlaceholderPostService
+    
+    static var scheme: String { return "https" }
+    static var host: String { return "jsonplaceholder.typicode.com" }
+    static var path: String? { return "posts" }
+    
+}

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A79D5431F29BD9E002F18C6 /* ToDoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5411F29BD9E002F18C6 /* ToDoCellViewModel.swift */; };
+		0A79D5441F29BD9E002F18C6 /* ToDoTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5421F29BD9E002F18C6 /* ToDoTableViewModel.swift */; };
+		0A79D5471F29BDA6002F18C6 /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5451F29BDA6002F18C6 /* PostCellViewModel.swift */; };
+		0A79D5481F29BDA6002F18C6 /* PostTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5461F29BDA6002F18C6 /* PostTableViewModel.swift */; };
+		0A79D54B1F29BDB7002F18C6 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5491F29BDB7002F18C6 /* PostTableCell.swift */; };
+		0A79D54C1F29BDB7002F18C6 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D54A1F29BDB7002F18C6 /* PostTableViewController.swift */; };
+		0A79D54F1F29BDC1002F18C6 /* ToDoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D54D1F29BDC1002F18C6 /* ToDoTableCell.swift */; };
+		0A79D5501F29BDC1002F18C6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D54E1F29BDC1002F18C6 /* ToDoTableViewController.swift */; };
+		0A79D5521F29BE26002F18C6 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5511F29BE26002F18C6 /* ToDoModel.swift */; };
+		0A79D5541F29BE2B002F18C6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79D5531F29BE2B002F18C6 /* PostModel.swift */; };
 		0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0843E1F29939300403546 /* AppDelegate.swift */; };
 		0AA084411F29939300403546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084401F29939300403546 /* ViewController.swift */; };
 		0AA084441F29939300403546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA084421F29939300403546 /* Main.storyboard */; };
@@ -71,6 +81,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A79D5411F29BD9E002F18C6 /* ToDoCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCellViewModel.swift; sourceTree = "<group>"; };
+		0A79D5421F29BD9E002F18C6 /* ToDoTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewModel.swift; sourceTree = "<group>"; };
+		0A79D5451F29BDA6002F18C6 /* PostCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
+		0A79D5461F29BDA6002F18C6 /* PostTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewModel.swift; sourceTree = "<group>"; };
+		0A79D5491F29BDB7002F18C6 /* PostTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
+		0A79D54A1F29BDB7002F18C6 /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		0A79D54D1F29BDC1002F18C6 /* ToDoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableCell.swift; sourceTree = "<group>"; };
+		0A79D54E1F29BDC1002F18C6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		0A79D5511F29BE26002F18C6 /* ToDoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		0A79D5531F29BE2B002F18C6 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		0AA0843B1F29939300403546 /* BMLRayen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLRayen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA0843E1F29939300403546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA084401F29939300403546 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +207,12 @@
 		0AA084741F29A96400403546 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A79D5531F29BE2B002F18C6 /* PostModel.swift */,
+				0A79D5511F29BE26002F18C6 /* ToDoModel.swift */,
+				0A79D5451F29BDA6002F18C6 /* PostCellViewModel.swift */,
+				0A79D5461F29BDA6002F18C6 /* PostTableViewModel.swift */,
+				0A79D5411F29BD9E002F18C6 /* ToDoCellViewModel.swift */,
+				0A79D5421F29BD9E002F18C6 /* ToDoTableViewModel.swift */,
 				0AA084761F29A9A600403546 /* PhotoModel.swift */,
 				0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */,
 				0AA084801F29AEB100403546 /* PhotoTableVM.swift */,
@@ -198,6 +224,8 @@
 		0AA084781F29AB7800403546 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A79D54E1F29BDC1002F18C6 /* ToDoTableViewController.swift */,
+				0A79D54A1F29BDB7002F18C6 /* PostTableViewController.swift */,
 				0AA0847B1F29AC0900403546 /* Cells */,
 				0AA084401F29939300403546 /* ViewController.swift */,
 				0AA084791F29ABC700403546 /* PhotosTableViewController.swift */,
@@ -209,6 +237,8 @@
 		0AA0847B1F29AC0900403546 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0A79D54D1F29BDC1002F18C6 /* ToDoTableCell.swift */,
+				0A79D5491F29BDB7002F18C6 /* PostTableCell.swift */,
 				0AA0847C1F29AC2300403546 /* PhotoCell.swift */,
 			);
 			name = Cells;
@@ -335,15 +365,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A79D5431F29BD9E002F18C6 /* ToDoCellViewModel.swift in Sources */,
+				0A79D5441F29BD9E002F18C6 /* ToDoTableViewModel.swift in Sources */,
 				0AA0847A1F29ABC700403546 /* PhotosTableViewController.swift in Sources */,
 				0AA084921F29B7BE00403546 /* CircularTransition.swift in Sources */,
 				0AA084411F29939300403546 /* ViewController.swift in Sources */,
+				0A79D54B1F29BDB7002F18C6 /* PostTableCell.swift in Sources */,
+				0A79D5481F29BDA6002F18C6 /* PostTableViewModel.swift in Sources */,
+				0A79D5471F29BDA6002F18C6 /* PostCellViewModel.swift in Sources */,
 				0AA084811F29AEB100403546 /* PhotoTableVM.swift in Sources */,
 				0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */,
 				0AA084941F29B7E800403546 /* HomeViewController.swift in Sources */,
+				0A79D54F1F29BDC1002F18C6 /* ToDoTableCell.swift in Sources */,
 				0AA084771F29A9A600403546 /* PhotoModel.swift in Sources */,
 				0AA0849A1F29B95C00403546 /* DynamicViewController.swift in Sources */,
+				0A79D54C1F29BDB7002F18C6 /* PostTableViewController.swift in Sources */,
+				0A79D5501F29BDC1002F18C6 /* ToDoTableViewController.swift in Sources */,
 				0AA084961F29B94300403546 /* SkillViewController.swift in Sources */,
+				0A79D5541F29BE2B002F18C6 /* PostModel.swift in Sources */,
 				0AA084911F29B7BE00403546 /* SkillLoaderView.swift in Sources */,
 				0AA084891F29B31A00403546 /* DetailVC.swift in Sources */,
 				0AA0847F1F29AD1600403546 /* PhotoCellVM.swift in Sources */,
@@ -353,6 +392,7 @@
 				0AA084981F29B94A00403546 /* AboutViewController.swift in Sources */,
 				0AA0849C1F29B9A400403546 /* AboutCollectionViewCell.swift in Sources */,
 				0AA0848B1F29B40600403546 /* DetailVM.swift in Sources */,
+				0A79D5521F29BE26002F18C6 /* ToDoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
