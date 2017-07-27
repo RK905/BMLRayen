@@ -10,10 +10,10 @@
 import ReactiveJSON
 import ReactiveSwift
 
-struct JSONPS : Singleton, ServiceHost {
+struct JSONPSPhoto : Singleton, ServiceHost {
     
     fileprivate(set) static var shared = Instance()
-    typealias Instance = JSONPS
+    typealias Instance = JSONPSPhoto
     
     static var scheme: String { return "https" }
     static var host: String { return "jsonplaceholder.typicode.com" }
