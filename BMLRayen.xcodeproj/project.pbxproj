@@ -15,7 +15,13 @@
 		0AA084541F29939300403546 /* BMLRayenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084531F29939300403546 /* BMLRayenTests.swift */; };
 		0AA084611F2996CD00403546 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */; };
 		0AA084621F2996CD00403546 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; };
-		0AA084631F2996CD00403546 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084601F2996CD00403546 /* Result.framework */; };
+		0AA084651F29987900403546 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084601F2996CD00403546 /* Result.framework */; };
+		0AA084661F29987B00403546 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */; };
+		0AA084671F29987B00403546 /* ReactiveJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AA084691F29987D00403546 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084601F2996CD00403546 /* Result.framework */; };
+		0AA0846A1F29987D00403546 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084601F2996CD00403546 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AA0846B1F29988000403546 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; };
+		0AA0846C1F29988000403546 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,22 @@
 			remoteInfo = BMLRayen;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AA084681F29987B00403546 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AA084671F29987B00403546 /* ReactiveJSON.framework in Embed Frameworks */,
+				0AA0846A1F29987D00403546 /* Result.framework in Embed Frameworks */,
+				0AA0846C1F29988000403546 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AA0843B1F29939300403546 /* BMLRayen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLRayen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +71,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA084631F2996CD00403546 /* Result.framework in Frameworks */,
 				0AA084611F2996CD00403546 /* ReactiveJSON.framework in Frameworks */,
 				0AA084621F2996CD00403546 /* ReactiveSwift.framework in Frameworks */,
+				0AA084691F29987D00403546 /* Result.framework in Frameworks */,
+				0AA084651F29987900403546 /* Result.framework in Frameworks */,
+				0AA084661F29987B00403546 /* ReactiveJSON.framework in Frameworks */,
+				0AA0846B1F29988000403546 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +143,7 @@
 				0AA084371F29939300403546 /* Sources */,
 				0AA084381F29939300403546 /* Frameworks */,
 				0AA084391F29939300403546 /* Resources */,
+				0AA084681F29987B00403546 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
