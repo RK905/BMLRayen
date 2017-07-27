@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -73,6 +74,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbK-s6-s4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2088.8000000000002" y="97.601199400299862"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="lev-2g-lpc">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="M2D-fO-wv4" customClass="DetailVC" customModule="BMLRayen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Apj-zd-oZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="At6-25-9sz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uAH-39-SdF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-QT-cw0">
+                                <rect key="frame" x="36" y="183" width="303" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vBu-m7-L86"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-AZ-mgq">
+                                <rect key="frame" x="20" y="503" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p6P-QT-cw0" firstAttribute="centerY" secondItem="uAH-39-SdF" secondAttribute="centerY" id="2gt-f3-BVX"/>
+                            <constraint firstItem="NaO-AZ-mgq" firstAttribute="top" secondItem="p6P-QT-cw0" secondAttribute="bottom" constant="20" id="DK8-N2-4Up"/>
+                            <constraint firstItem="p6P-QT-cw0" firstAttribute="leading" secondItem="uAH-39-SdF" secondAttribute="leadingMargin" constant="20" id="Gxe-o0-z9B"/>
+                            <constraint firstItem="NaO-AZ-mgq" firstAttribute="leading" secondItem="uAH-39-SdF" secondAttribute="leading" constant="20" id="SPO-ai-z2p"/>
+                            <constraint firstAttribute="trailing" secondItem="NaO-AZ-mgq" secondAttribute="trailing" constant="20" id="WyA-un-oLF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p6P-QT-cw0" secondAttribute="trailing" constant="20" id="vyf-61-qtB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullImage" destination="p6P-QT-cw0" id="Ikt-c6-ACb"/>
+                        <outlet property="titleLabel" destination="NaO-AZ-mgq" id="je2-GA-kvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIp-JT-YjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2839" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ysY-cF-kA3">

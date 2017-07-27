@@ -45,6 +45,18 @@ var ptVM: PhotoTableVM = PhotoTableVM()
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let destination = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC {
+            
+            if let photoVM:PhotoCellVM = ptVM.getPostCellViewModel(atIndex: indexPath.row) {
+                destination.viewModel = DetailVM(withPhoto: photoVM)
+                navigationController?.pushViewController(destination, animated: true)
+            }
+        }
+    }
+
 
 
 }

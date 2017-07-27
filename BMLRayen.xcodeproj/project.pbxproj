@@ -31,6 +31,8 @@
 		0AA084851F29B19200403546 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; };
 		0AA084861F29B19900403546 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; };
 		0AA084871F29B19900403546 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AA084891F29B31A00403546 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084881F29B31A00403546 /* DetailVC.swift */; };
+		0AA0848B1F29B40600403546 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0848A1F29B40600403546 /* DetailVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCellVM.swift; sourceTree = "<group>"; };
 		0AA084801F29AEB100403546 /* PhotoTableVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableVM.swift; sourceTree = "<group>"; };
 		0AA084841F29B19200403546 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		0AA084881F29B31A00403546 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		0AA0848A1F29B40600403546 /* DetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 				0AA084761F29A9A600403546 /* PhotoModel.swift */,
 				0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */,
 				0AA084801F29AEB100403546 /* PhotoTableVM.swift */,
+				0AA0848A1F29B40600403546 /* DetailVM.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				0AA0847B1F29AC0900403546 /* Cells */,
 				0AA084401F29939300403546 /* ViewController.swift */,
 				0AA084791F29ABC700403546 /* PhotosTableViewController.swift */,
+				0AA084881F29B31A00403546 /* DetailVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -302,9 +308,11 @@
 				0AA084811F29AEB100403546 /* PhotoTableVM.swift in Sources */,
 				0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */,
 				0AA084771F29A9A600403546 /* PhotoModel.swift in Sources */,
+				0AA084891F29B31A00403546 /* DetailVC.swift in Sources */,
 				0AA0847F1F29AD1600403546 /* PhotoCellVM.swift in Sources */,
 				0AA0847D1F29AC2300403546 /* PhotoCell.swift in Sources */,
 				0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */,
+				0AA0848B1F29B40600403546 /* DetailVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
