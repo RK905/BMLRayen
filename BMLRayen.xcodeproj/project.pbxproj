@@ -22,6 +22,7 @@
 		0AA0846A1F29987D00403546 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084601F2996CD00403546 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AA0846B1F29988000403546 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; };
 		0AA0846C1F29988000403546 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0846E1F29A7B500403546 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveJSON.framework; sourceTree = "<group>"; };
 		0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = "<group>"; };
 		0AA084601F2996CD00403546 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		0AA0846E1F29A7B500403546 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		0AA0843D1F29939300403546 /* BMLRayen */ = {
 			isa = PBXGroup;
 			children = (
+				0AA0846D1F29A78E00403546 /* Services */,
 				0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */,
 				0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */,
 				0AA084601F2996CD00403546 /* Result.framework */,
@@ -131,6 +134,14 @@
 				0AA084551F29939300403546 /* Info.plist */,
 			);
 			path = BMLRayenTests;
+			sourceTree = "<group>";
+		};
+		0AA0846D1F29A78E00403546 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AA0846E1F29A7B500403546 /* ApiService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 			files = (
 				0AA084411F29939300403546 /* ViewController.swift in Sources */,
 				0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */,
+				0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
