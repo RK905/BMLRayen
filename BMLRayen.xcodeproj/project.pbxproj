@@ -33,6 +33,14 @@
 		0AA084871F29B19900403546 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AA084891F29B31A00403546 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084881F29B31A00403546 /* DetailVC.swift */; };
 		0AA0848B1F29B40600403546 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0848A1F29B40600403546 /* DetailVM.swift */; };
+		0AA0848E1F29B78200403546 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0848D1F29B78200403546 /* PreviewImageViewController.swift */; };
+		0AA084911F29B7BE00403546 /* SkillLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0848F1F29B7BE00403546 /* SkillLoaderView.swift */; };
+		0AA084921F29B7BE00403546 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084901F29B7BE00403546 /* CircularTransition.swift */; };
+		0AA084941F29B7E800403546 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084931F29B7E800403546 /* HomeViewController.swift */; };
+		0AA084961F29B94300403546 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084951F29B94300403546 /* SkillViewController.swift */; };
+		0AA084981F29B94A00403546 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084971F29B94A00403546 /* AboutViewController.swift */; };
+		0AA0849A1F29B95C00403546 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084991F29B95C00403546 /* DynamicViewController.swift */; };
+		0AA0849C1F29B9A400403546 /* AboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0849B1F29B9A400403546 /* AboutCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,14 @@
 		0AA084841F29B19200403546 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		0AA084881F29B31A00403546 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		0AA0848A1F29B40600403546 /* DetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		0AA0848D1F29B78200403546 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		0AA0848F1F29B7BE00403546 /* SkillLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillLoaderView.swift; sourceTree = "<group>"; };
+		0AA084901F29B7BE00403546 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		0AA084931F29B7E800403546 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0AA084951F29B94300403546 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		0AA084971F29B94A00403546 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0AA084991F29B95C00403546 /* DynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		0AA0849B1F29B9A400403546 /* AboutCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,7 @@
 		0AA0843D1F29939300403546 /* BMLRayen */ = {
 			isa = PBXGroup;
 			children = (
+				0AA0848C1F29B71C00403546 /* Author */,
 				0AA084781F29AB7800403546 /* Controllers */,
 				0AA084741F29A96400403546 /* Model */,
 				0AA0846D1F29A78E00403546 /* Services */,
@@ -195,6 +212,21 @@
 				0AA0847C1F29AC2300403546 /* PhotoCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		0AA0848C1F29B71C00403546 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				0AA0849B1F29B9A400403546 /* AboutCollectionViewCell.swift */,
+				0AA084991F29B95C00403546 /* DynamicViewController.swift */,
+				0AA084971F29B94A00403546 /* AboutViewController.swift */,
+				0AA084951F29B94300403546 /* SkillViewController.swift */,
+				0AA084931F29B7E800403546 /* HomeViewController.swift */,
+				0AA0848F1F29B7BE00403546 /* SkillLoaderView.swift */,
+				0AA084901F29B7BE00403546 /* CircularTransition.swift */,
+				0AA0848D1F29B78200403546 /* PreviewImageViewController.swift */,
+			);
+			name = Author;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +336,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA0847A1F29ABC700403546 /* PhotosTableViewController.swift in Sources */,
+				0AA084921F29B7BE00403546 /* CircularTransition.swift in Sources */,
 				0AA084411F29939300403546 /* ViewController.swift in Sources */,
 				0AA084811F29AEB100403546 /* PhotoTableVM.swift in Sources */,
 				0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */,
+				0AA084941F29B7E800403546 /* HomeViewController.swift in Sources */,
 				0AA084771F29A9A600403546 /* PhotoModel.swift in Sources */,
+				0AA0849A1F29B95C00403546 /* DynamicViewController.swift in Sources */,
+				0AA084961F29B94300403546 /* SkillViewController.swift in Sources */,
+				0AA084911F29B7BE00403546 /* SkillLoaderView.swift in Sources */,
 				0AA084891F29B31A00403546 /* DetailVC.swift in Sources */,
 				0AA0847F1F29AD1600403546 /* PhotoCellVM.swift in Sources */,
+				0AA0848E1F29B78200403546 /* PreviewImageViewController.swift in Sources */,
 				0AA0847D1F29AC2300403546 /* PhotoCell.swift in Sources */,
 				0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */,
+				0AA084981F29B94A00403546 /* AboutViewController.swift in Sources */,
+				0AA0849C1F29B9A400403546 /* AboutCollectionViewCell.swift in Sources */,
 				0AA0848B1F29B40600403546 /* DetailVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
