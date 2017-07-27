@@ -24,6 +24,13 @@
 		0AA0846C1F29988000403546 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0846E1F29A7B500403546 /* ApiService.swift */; };
 		0AA084771F29A9A600403546 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084761F29A9A600403546 /* PhotoModel.swift */; };
+		0AA0847A1F29ABC700403546 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084791F29ABC700403546 /* PhotosTableViewController.swift */; };
+		0AA0847D1F29AC2300403546 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0847C1F29AC2300403546 /* PhotoCell.swift */; };
+		0AA0847F1F29AD1600403546 /* PhotoCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */; };
+		0AA084811F29AEB100403546 /* PhotoTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA084801F29AEB100403546 /* PhotoTableVM.swift */; };
+		0AA084851F29B19200403546 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; };
+		0AA084861F29B19900403546 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; };
+		0AA084871F29B19900403546 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA084841F29B19200403546 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,7 @@
 				0AA084671F29987B00403546 /* ReactiveJSON.framework in Embed Frameworks */,
 				0AA0846A1F29987D00403546 /* Result.framework in Embed Frameworks */,
 				0AA0846C1F29988000403546 /* ReactiveSwift.framework in Embed Frameworks */,
+				0AA084871F29B19900403546 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +76,11 @@
 		0AA084601F2996CD00403546 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		0AA0846E1F29A7B500403546 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		0AA084761F29A9A600403546 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		0AA084791F29ABC700403546 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		0AA0847C1F29AC2300403546 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCellVM.swift; sourceTree = "<group>"; };
+		0AA084801F29AEB100403546 /* PhotoTableVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableVM.swift; sourceTree = "<group>"; };
+		0AA084841F29B19200403546 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +91,9 @@
 				0AA084611F2996CD00403546 /* ReactiveJSON.framework in Frameworks */,
 				0AA084621F2996CD00403546 /* ReactiveSwift.framework in Frameworks */,
 				0AA084691F29987D00403546 /* Result.framework in Frameworks */,
+				0AA084861F29B19900403546 /* ReactiveCocoa.framework in Frameworks */,
 				0AA084651F29987900403546 /* Result.framework in Frameworks */,
+				0AA084851F29B19200403546 /* ReactiveCocoa.framework in Frameworks */,
 				0AA084661F29987B00403546 /* ReactiveJSON.framework in Frameworks */,
 				0AA0846B1F29988000403546 /* ReactiveSwift.framework in Frameworks */,
 			);
@@ -115,13 +130,14 @@
 		0AA0843D1F29939300403546 /* BMLRayen */ = {
 			isa = PBXGroup;
 			children = (
+				0AA084781F29AB7800403546 /* Controllers */,
 				0AA084741F29A96400403546 /* Model */,
 				0AA0846D1F29A78E00403546 /* Services */,
+				0AA084841F29B19200403546 /* ReactiveCocoa.framework */,
 				0AA0845E1F2996CD00403546 /* ReactiveJSON.framework */,
 				0AA0845F1F2996CD00403546 /* ReactiveSwift.framework */,
 				0AA084601F2996CD00403546 /* Result.framework */,
 				0AA0843E1F29939300403546 /* AppDelegate.swift */,
-				0AA084401F29939300403546 /* ViewController.swift */,
 				0AA084421F29939300403546 /* Main.storyboard */,
 				0AA084451F29939300403546 /* Assets.xcassets */,
 				0AA084471F29939300403546 /* LaunchScreen.storyboard */,
@@ -151,8 +167,28 @@
 			isa = PBXGroup;
 			children = (
 				0AA084761F29A9A600403546 /* PhotoModel.swift */,
+				0AA0847E1F29AD1600403546 /* PhotoCellVM.swift */,
+				0AA084801F29AEB100403546 /* PhotoTableVM.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		0AA084781F29AB7800403546 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AA0847B1F29AC0900403546 /* Cells */,
+				0AA084401F29939300403546 /* ViewController.swift */,
+				0AA084791F29ABC700403546 /* PhotosTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0AA0847B1F29AC0900403546 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0AA0847C1F29AC2300403546 /* PhotoCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA0847A1F29ABC700403546 /* PhotosTableViewController.swift in Sources */,
 				0AA084411F29939300403546 /* ViewController.swift in Sources */,
+				0AA084811F29AEB100403546 /* PhotoTableVM.swift in Sources */,
 				0AA0843F1F29939300403546 /* AppDelegate.swift in Sources */,
 				0AA084771F29A9A600403546 /* PhotoModel.swift in Sources */,
+				0AA0847F1F29AD1600403546 /* PhotoCellVM.swift in Sources */,
+				0AA0847D1F29AC2300403546 /* PhotoCell.swift in Sources */,
 				0AA0846F1F29A7B500403546 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
